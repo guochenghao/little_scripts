@@ -1,3 +1,4 @@
+# python3
 import requests
 import os
 import sqlite3
@@ -45,5 +46,8 @@ if __name__ == "__main__" :
     # 保存到txt中查看是否访问成功
     with open('test.txt', 'w', encoding='utf-8') as f:
         f.write(resp.text)
-
+    
+    # 检查是否登录成功
     assert user_name in resp.text, 'cookie访问失败'
+
+# 备注：其中test_url, test_host, user_name需要替换，替换完成后可以直接运行
