@@ -48,6 +48,6 @@ if __name__ == "__main__" :
         f.write(resp.text)
     
     # 检查是否登录成功
-    assert user_name in resp.text, 'cookie访问失败'
+    assert user_name in resp.text, '使用cookie模拟访问失败'
 
 # 备注：其中test_url, test_host, user_name需要替换，替换完成后可以直接运行
