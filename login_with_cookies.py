@@ -3,7 +3,7 @@ import requests
 import os
 import sqlite3
 from win32crypt import CryptUnprotectData
-from collection import namedtuple
+from collections import namedtuple
 
 # cookies存放路径
 cookie_path = os.environ['LOCALAPPDATA'] + r"\Google\Chrome\User Data\Default\Cookies"
