@@ -21,7 +21,7 @@ def get_cookie_from_chrome(host=None):
 cookies_domain = ['.youdao.com', '.note.youdao.com', 'note.youdao.com'] # example
 def get_all_cookies(domains=None):
     cookies = {}
-    for domain in cookies_domain:
+    for domain in domains:
         cookies.update(get_cookie_from_chrome(domain))
     return cookies
 all_domain_cookies = get_all_cookies(cookies_domain) # 获取指定域名的cookies
