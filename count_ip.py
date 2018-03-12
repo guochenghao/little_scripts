@@ -13,4 +13,6 @@ with open('/var/log/secure') as e:
         if t:
             ip_key = t.group(0)
             ip_seq[ip_key] = ip_seq.get(ip_key, 0) + 1
-print(ip_seq)
+
+if __name__ == '__main__':
+    print(ip_seq)
