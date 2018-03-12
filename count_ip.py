@@ -1,13 +1,13 @@
 import re
 
 # 匹配ip地址
-reg = re.compile(r'(\d{1,3}\.}){3}(\d{1,3})')
+reg = re.compile(r'(\d{1,3}\.){3}(\d{1,3})')
 
 # 统计ip次数
 ip_seq = {}
 
 with open('/var/log/secure') as e:
-    f = e.readline()
+    f = e.readlines()
     for i in f:
         t = re.search(reg, i)
         if t:
