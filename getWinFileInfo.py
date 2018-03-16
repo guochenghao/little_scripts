@@ -38,6 +38,6 @@ def getFileProperties(fname):
     return props
  
  
-if __name__ = "__main__":
-　　getFileProperties('D:\\ProgramData\\Anaconda3\\python.exe')
+if __name__ == "__main__":
+    getFileProperties('D:\\ProgramData\\Anaconda3\\python.exe')
 # 参考https://www.cnblogs.com/sigai/p/7582367.html
